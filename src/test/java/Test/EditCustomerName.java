@@ -9,7 +9,7 @@ public class EditCustomerName extends BaseClass {
     }
 
     @Test(dependsOnMethods = "login")
-    public void visitCustomerPage()
+    public void editCustomerName()
     {
         pageFactory.getCustomersPage().visitCustomersPage();
         pageFactory.getCustomersPage().editCustomerName();
