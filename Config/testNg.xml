@@ -16,4 +16,12 @@
             <class name="Test.EditCustomerName"/>
         </classes>
     </test>
+
+    <test name="Edit vendors details">
+        <parameter name="browserName" value="chrome"></parameter>
+        <parameter name="testRunId3" value="TCTC-3"/>
+        <classes>
+            <class name="Test.SearchCustomer"/>
+        </classes>
+    </test>
 </suite>
