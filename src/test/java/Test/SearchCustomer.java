@@ -2,9 +2,11 @@ package Test;
 
 import org.testng.annotations.Test;
 
+import java.io.IOException;
+
 public class SearchCustomer extends BaseClass{
     @Test
-    public void login() {
+    public void login() throws IOException {
         pageFactory.getLoginPage().login();
     }
 
