@@ -10,4 +10,20 @@
             <class name="Test.LoginTest"/>
         </classes>
     </test>
+
+    <test name="Verify user able to add email account">
+        <parameter name="browserName" value="chrome"></parameter>
+        <parameter name="testRunId2" value="TCTC-2"/>
+        <classes>
+            <class name="Test.AddEmailAccount"/>
+        </classes>
+    </test>
+
+    <test name="Verify user able to edit store name">
+        <parameter name="browserName" value="chrome"></parameter>
+        <parameter name="testRunId2" value="TCTC-2"/>
+        <classes>
+            <class name="Test.EditStoreName"/>
+        </classes>
+    </test>
 </suite>
