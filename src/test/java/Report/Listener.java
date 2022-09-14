@@ -12,10 +12,10 @@ public class Listener implements ITestListener {
     ExtentReports extent = ExtentReport.extentReportGenerator();
     ExtentTest test;
     WebDriver driver;
+
     public void onFinish(ITestContext context) {
         extent.flush();
     }
-
 
     public void onTestStart(ITestResult result) {
         test = extent.createTest(result.getMethod().getMethodName());
@@ -33,10 +33,8 @@ public class Listener implements ITestListener {
     public void onTestSkipped(ITestResult result) {
     }
 
-
     public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
     }
-
 
     public void onStart(ITestContext context) {
     }
